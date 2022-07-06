@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>开始购物</title>
+		<style type = "text/css">
+	*{
+		margin : 0;
+		padding: 0;
+		overflow: hidden;
+	 }
+	body{
+			 background-image: url(img/background.png);
+			 
+	}
+	
+	 .div{
+		 position: relative;
+		 width: 1549px;
+		 height: 1149px;
+		 margin: 0 auto;
+		 display: block;
+	 }
+	 .left{
+		float: left;
+	    top: 119px;
+	    left: 24px;
+	    width: 857px;
+	    height: 600px;
+	 }
+	 .image1{
+	 		position: absolute;
+			top: 120px;
+	 		transform: scale(0.75);
+	 		}
+	 .image2{
+			position: absolute;
+			left: 73px;
+			top: 425px;
+			transform: scale(0.5);
+	 }
+	 .right{
+		        width: 610px;
+		        height: 750px;
+		        padding-top: 18px;
+		        right: -39px;
+	 }
+	 .image3{
+			position: absolute;
+			right: 228px;
+			bottom: -461px;
+			transform: scale(0.3);
+			animation: move 2s ease;
+			animation-fill-mode: forwards;
+	 		}
+
+	
+	
+	 .image2:hover{
+		 transform:scale(0.6);
+	 }
+	
+	
+	@keyframes move{
+		0%{
+			left:100vh;
+		}
+		100%{
+			left:10vw
+			
+	}
+		
+	 }
+	</style>
+	</head>
+		<body class="body">
+			<div class="div">
+				<div class="left">
+					<img class="image1" src="img/welcome.png"/>
+					<a href="https://wodewaitao.github.io/fraud/"><img class="image2" src="img/start.png" /></a>
+					</div>
+				<div class="right">
+					<img class="image3" src="img/illustration.png"/>
+				</div>
+			</div>
+	</body>
+</html>
